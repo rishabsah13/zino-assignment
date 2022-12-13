@@ -105,31 +105,31 @@ const handleSave=(e)=>{
       
     <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", gap:"20px", flexDirection:"column"}}>
     <h1>Team Red</h1>
-      <button hidden={redArr.length<8? false :true} name="red" onClick={handleClick} style={{backgroundColor:"red", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold"}}>Add</button>
-      <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
+      <button hidden={redArr.length<8? false :true} name="red" onClick={handleClick} style={{backgroundColor:"red", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>Add</button>
+      <div style={{borderRadius:"20px",boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
         
       {redArr?.map((ele)=>{return <Card key={ele.id} color="red"ele={ele} handleDelete={handleDelete}handleSave={handleSave}/>})}  
       </div>    
     </div >
     <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", gap:"20px", flexDirection:"column"}}>
     <h1>Team Blue</h1>
-    <button hidden={blueArr.length<8? false :true} name="blue" onClick={handleClick} style={{backgroundColor:"blue", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold"}}>Add</button>
-    <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
+    <button hidden={blueArr.length<8? false :true} name="blue" onClick={handleClick} style={{backgroundColor:"blue", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold",fontWeight:"bold", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>Add</button>
+    <div style={{borderRadius:"20px",boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
     {blueArr?.map((ele)=>{return <Card key={ele.id} color="blue"ele={ele} handleDelete={handleDelete}handleSave={handleSave}/>})} 
 
     </div>     
     </div>
     <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", gap:"20px", flexDirection:"column"}}>
     <h1>Team Green</h1>
-    <button hidden={greenArr.length<8? false :true} name="green" onClick={handleClick} style={{backgroundColor:"green", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold"}}>Add</button>
-    <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
+    <button hidden={greenArr.length<8? false :true} name="green" onClick={handleClick} style={{backgroundColor:"green", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold",fontWeight:"bold", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>Add</button>
+    <div style={{ borderRadius:"20px",boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
     {greenArr?.map((ele)=>{return <Card key={ele.id} color="green"ele={ele} handleDelete={handleDelete}handleSave={handleSave}/>})} 
     </div>     
     </div>
     <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", gap:"20px", flexDirection:"column"}}>
     <h1>Team Brown</h1>
     <button hidden={brownArr.length<8? false :true} style={{backgroundColor:"brown", padding:"10px", borderRadius:"20px", color:"white", fontWeight:"bold"}} name="brown" onClick={handleClick}>Add</button>
-    <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
+    <div style={{borderRadius:"20px",boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",display:"flex",flexDirection:"column",justifyContent:"space-around", border:"10px solid black",  width:"250px",alignItems:"center",height:"550px"}}>
     {brownArr?.map((ele)=>{return <Card key={ele.id} color="brown"ele={ele} handleDelete={handleDelete}handleSave={handleSave}/>})} 
     </div>     
     </div>
