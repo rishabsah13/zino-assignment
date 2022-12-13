@@ -14,7 +14,7 @@ const handleOnChange=(e)=>{
 
 
   return (
-    <div style={{width:"200px", height:"50px", border:"2px solid black", alignContent:"center", backgroundColor:props.color, borderRadius:"20px",color:"white"}}>
+    <div style={{width:"200px", height:"50px", border:"2px solid black", alignContent:"center", backgroundColor:props.color, borderRadius:"20px",color:"white",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
       <input onChange={handleOnChange} style={{height:"45px",width:"90px", border:"0px solid black", alignItems:"center", backgroundColor:props.color, color:"white",borderRadius:"20px" }} placeholder={text}/>
       <button onClick={props.handleDelete} name={props.color} id={props.ele.id}>X</button>
       <button onClick={props.handleSave} name={props.color} id={props.ele.id} value={text}>✔</button>
